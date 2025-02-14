@@ -39,3 +39,25 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.bottom-notice {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.notice-cn {
+    font-size: 16px;
+    color: #721c24;
+    margin-bottom: 5px;
+}
+
+.notice-en {
+    font-size: 14px;
+    color: #721c24;
+    font-style: italic;
+}
