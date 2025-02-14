@@ -35,3 +35,8 @@ yarn-error.log*
 # Operating System Files
 Thumbs.db
 Desktop.ini
+
+# Clacky Configuration
+.1024*
+!.1024
+.breakpoints
