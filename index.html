@@ -8,6 +8,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- 轮播图容器 -->
+    <div id="carousel" class="carousel">
+        <!-- 轮播图幻灯片 -->
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/1.jpg" alt="幻灯片1">
+            </div>
+            <div class="slide">
+                <img src="images/2.jpg" alt="幻灯片2">
+            </div>
+            <div class="slide">
+                <img src="images/3.jpg" alt="幻灯片3">
+            </div>
+        </div>
+        
+        <!-- 轮播图导航按钮 -->
+        <button class="carousel-button prev">&lt;</button>
+        <button class="carousel-button next">&gt;</button>
+        
+        <!-- 轮播图指示器 -->
+        <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+    </div>
+
     <div class="container">
         <h1>安克公司介绍</h1>
         <h2>公司使命</h2>

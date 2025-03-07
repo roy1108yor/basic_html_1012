@@ -44,3 +44,140 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* 轮播图容器样式 */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* 轮播图幻灯片容器 */
+.slides {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+/* 轮播图单个幻灯片 */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 当前活动的幻灯片 */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* 幻灯片中的图片 */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 轮播图导航按钮基本样式 */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* 前进按钮位置 */
+.carousel-button.next {
+    right: 10px;
+}
+
+/* 后退按钮位置 */
+.carousel-button.prev {
+    left: 10px;
+}
+
+/* 导航按钮悬停效果 */
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 轮播图指示器容器 */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* 轮播图指示器点样式 */
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 当前活动的指示器点 */
+.indicator.active {
+    background-color: white;
+}
+
+/* 响应式布局 - 小屏幕设备 */
+@media screen and (max-width: 768px) {
+    .slides {
+        height: 300px;
+    }
+    
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* 响应式布局 - 超小屏幕设备 */
+@media screen and (max-width: 480px) {
+    .slides {
+        height: 200px;
+    }
+    
+    .carousel-button {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+    
+    .carousel-indicators {
+        bottom: 10px;
+    }
+}
