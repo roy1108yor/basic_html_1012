@@ -1,11 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: block;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container {
@@ -14,11 +13,17 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
+/* 设置标题文本颜色为橙色 */
 h1 {
-    color: red;
+    color: #FFA500;
+}
+
+/* 为所有文本元素设置橙色 */
+h1, h2, h3, h4, h5, h6, p {
+    color: #FFA500;
 }
 
 button {
