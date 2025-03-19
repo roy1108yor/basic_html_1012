@@ -26,6 +26,21 @@ h1, h2, h3, h4, h5, h6, p {
     color: #FFA500;
 }
 
+/* 设置h2标题文本颜色为蓝色 */
+h2 {
+    color: blue;
+}
+
+/* 设置h3标题文本颜色为绿色 */
+h3 {
+    color: green;
+}
+
+/* 设置h4标题文本颜色为红色 */
+h4 {
+    color: red;
+}
+
 button {
     background-color: #4CAF50;
     border: none;
