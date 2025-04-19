@@ -1,3 +1,7 @@
+# Clacky-related configuration
+.1024*
+!.1024
+.breakpoints
 
 # Browser-sync and system files
 *.log
