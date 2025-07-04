@@ -16,29 +16,29 @@ body {
     margin-top: 20px;
 }
 
-/* 设置标题文本颜色为橙色 */
+/* 设置标题文本颜色为黑色 */
 h1 {
-    color: #FFA500;
+    color: black;
 }
 
-/* 为所有文本元素设置橙色 */
+/* 为所有文本元素设置黑色 */
 h1, h2, h3, h4, h5, h6, p {
-    color: #FFA500;
+    color: black;
 }
 
-/* 设置h2标题文本颜色为蓝色 */
+/* 设置h2标题文本颜色为黑色 */
 h2 {
-    color: blue;
+    color: black;
 }
 
-/* 设置h3标题文本颜色为绿色 */
+/* 设置h3标题文本颜色为黑色 */
 h3 {
-    color: green;
+    color: black;
 }
 
-/* 设置h4标题文本颜色为红色 */
+/* 设置h4标题文本颜色为黑色 */
 h4 {
-    color: red;
+    color: black;
 }
 
 button {
