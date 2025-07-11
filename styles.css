@@ -1,6 +1,7 @@
+/* 设置页面整体样式，包括字体、背景颜色、边距和内边距 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #FFA500;
     display: block;
     margin: 0;
     padding-top: 20px;
