@@ -6,6 +6,6 @@
 
 
 # Command to run when "Run" button clicked
-run_command: "browser-sync start --server --no-notify --no-open --files '**/*.css, **/*.html, **/*.js'"
+run_command: "cd /home/runner/app && browser-sync start --server --no-ui --no-notify --no-open --files '**/*.css, **/*.html, **/*.js'"
 
 
