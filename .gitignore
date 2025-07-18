@@ -40,3 +40,14 @@ Desktop.ini
 .1024*
 !.1024
 .breakpoints
+
+# HTML/CSS/JS specific
+*.min.js
+*.min.css
+.sass-cache/
+*.map
+
+# Temporary files
+*.tmp
+*.temp
+*~
