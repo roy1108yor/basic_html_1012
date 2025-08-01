@@ -4,6 +4,7 @@
 
 # Command to run when "Run" button clicked
 # Uses browser-sync to serve static HTML/CSS/JS files with live reload
-run_command: "browser-sync start --server --no-ui --no-notify --no-open --files '**/*.css, **/*.html, **/*.js'"
+# Monitors CSS, HTML, and JS files for changes and auto-refreshes browser
+run_command: "cd /home/runner/app && browser-sync start --server --no-ui --no-notify --no-open --files '**/*.css, **/*.html, **/*.js'"
 
 
