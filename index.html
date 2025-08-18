@@ -3,51 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安克公司介绍</title>
+    <title>安克公司介绍 - 创新科技，智能生活</title>
+    <meta name="description" content="安克公司专注于智能硬件设备研发，提供便捷创新的科技解决方案，包括智能家居设备、充电器等产品。">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- 轮播图容器 -->
+    <!-- 现代化轮播图容器 -->
     <div id="carousel" class="carousel">
         <!-- 轮播图幻灯片 -->
         <div class="slides">
             <div class="slide active">
-                <img src="images/1.jpg" alt="幻灯片1">
+                <img src="images/1.jpg" alt="安克创新科技产品展示">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>创新科技</h3>
+                        <p>引领智能硬件新时代</p>
+                    </div>
+                </div>
             </div>
             <div class="slide">
-                <img src="images/2.jpg" alt="幻灯片2">
+                <img src="images/2.jpg" alt="安克智能家居解决方案">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>智能家居</h3>
+                        <p>让生活更加便捷智能</p>
+                    </div>
+                </div>
             </div>
             <div class="slide">
-                <img src="images/3.jpg" alt="幻灯片3">
+                <img src="images/3.jpg" alt="安克充电技术创新">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>充电技术</h3>
+                        <p>高效可靠的能源解决方案</p>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <!-- 轮播图导航按钮 -->
-        <button class="carousel-button prev">&lt;</button>
-        <button class="carousel-button next">&gt;</button>
+        <!-- 现代化导航按钮 -->
+        <button class="carousel-button prev" aria-label="上一张幻灯片">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-button next" aria-label="下一张幻灯片">
+            <i class="fas fa-chevron-right"></i>
+        </button>
         
-        <!-- 轮播图指示器 -->
+        <!-- 现代化指示器 -->
         <div class="carousel-indicators">
-            <span class="indicator active" data-index="0"></span>
-            <span class="indicator" data-index="1"></span>
-            <span class="indicator" data-index="2"></span>
+            <span class="indicator active" data-index="0" aria-label="第1张幻灯片"></span>
+            <span class="indicator" data-index="1" aria-label="第2张幻灯片"></span>
+            <span class="indicator" data-index="2" aria-label="第3张幻灯片"></span>
         </div>
     </div>
 
+    <!-- 主内容容器 -->
     <div class="container">
         <h1>安克公司介绍</h1>
-        <h2>公司使命</h2>
-        <p>提供便捷和创新的科技硬件解决方案。</p>
-        <h2>产品类型</h2>
-        <p>如智能家居设备、充电器等。</p>
-        <h2>技术创新</h2>
-        <p>致力于研发高效、可靠的产品。</p>
-        <h2>公司地址</h2>
-        <p>xx市xx镇</p>
-        <h2>联系电话</h2>
-        <p>18644445555</p>
+        
+        <!-- 公司信息卡片网格 -->
+        <div class="info-grid">
+            <!-- 公司使命卡片 -->
+            <div class="info-card">
+                <div class="card-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>公司使命</h2>
+                <p>致力于提供便捷和创新的科技硬件解决方案，通过持续的技术创新和产品优化，为全球用户创造更加智能、高效的生活体验。我们始终坚持以用户需求为核心，不断突破技术边界。</p>
+            </div>
+
+            <!-- 产品类型卡片 -->
+            <div class="info-card">
+                <div class="card-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h2>产品类型</h2>
+                <p>专注于智能硬件设备的研发与制造，主要产品包括智能家居设备、快速充电器、移动电源、数据传输线缆、音频设备等，涵盖了现代数字生活的各个方面。</p>
+            </div>
+
+            <!-- 技术创新卡片 -->
+            <div class="info-card">
+                <div class="card-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h2>技术创新</h2>
+                <p>拥有强大的研发团队和先进的技术实验室，致力于研发高效、可靠、安全的产品。在充电技术、智能连接、材料科学等领域不断创新，获得了多项国际专利认证。</p>
+            </div>
+
+            <!-- 品质保证卡片 -->
+            <div class="info-card">
+                <div class="card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h2>品质保证</h2>
+                <p>严格的质量控制体系确保每一款产品都达到国际标准。通过ISO9001质量管理体系认证，产品销往全球100多个国家和地区，深受用户信赖。</p>
+            </div>
+
+            <!-- 联系信息卡片 -->
+            <div class="info-card contact-info">
+                <div class="card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h2>公司地址</h2>
+                <p>xx市xx镇科技园区</p>
+            </div>
+
+            <!-- 联系电话卡片 -->
+            <div class="info-card contact-info">
+                <div class="card-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h2>联系电话</h2>
+                <p>18644445555</p>
+            </div>
+        </div>
     </div>
+
+    <!-- 页面底部装饰 -->
+    <div class="page-footer">
+        <div class="footer-decoration"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
